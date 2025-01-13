@@ -105,6 +105,11 @@ body {
   .bc {
     border: 1px solid white;
   }
+.roadmap-boxes{
+    display: flex;
+    align-items: center; justify-content: center
+}
+  
   @media (min-width: 1000px) and (max-width: 1300px) {
     .sooper {
       right: -80px !important;
@@ -1005,23 +1010,30 @@ img {
     display: block;
 }
 .roadmap .roadmap-boxes {
-    padding-left: 7.5vw;
-    padding-right: 7.5vw;
+    padding-left: 3.5vw;
+    padding-right: 3.5vw;
 }
 
+
 .roadmap .roadmap-boxes .box {
-    display: inline-block !important;
-    background: #0b1937;
-    border: 5px solid #2e66ff;
-    margin-top: 20px;
-    width: 24%;
-    gap: 0px;
-    border-radius: 19px;
-    opacity: 0px;
-    padding: 38px 28px;
-    margin-left: 5px;
-    margin-right: 4px;
-    text-align: center;
+	display: inline-block !important;
+	background: #0b1937;
+	border: 5px solid #2e66ff;
+	margin-top: 20px;
+	width: 24%;
+	
+	border-radius: 19px;
+	opacity: 0px;
+	padding: 38px 28px;
+	margin-left: 9px;
+	margin-right: 9px;
+	text-align: center;
+	height: 377px;
+	flex-wrap: nowrap;
+	gap: 15px;
+}
+.tkn_box{
+    height:216px!important
 }
 .roadmap .roadmap-boxes .box img {
     width: 100%;
@@ -1156,6 +1168,23 @@ footer .socials a img {
   }
   /* Responsive Design for Phones */
   @media (max-width: 768px) {
+    .roadmap .roadmap-boxes .box {
+        display: inline-block !important;
+        background: #0b1937;
+        border: 5px solid #2e66ff;
+        margin-top: 20px;
+        width: 24%;
+        
+        border-radius: 19px;
+        opacity: 0px;
+        padding: 38px 28px;
+        margin-left: 9px;
+        margin-right: 9px;
+        text-align: center;
+        height: 377px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
     .slide-track {
       width: calc(100vw * 10); /* Ensure smooth sliding */
       animation: scroll-phone 40s linear infinite;
@@ -1650,6 +1679,10 @@ footer .socials a img {
 /* ----------------------------@ 600px--------
 ------- */
 @media screen and (max-width:768px){
+    .roadmap-boxes{
+        display: block;
+        align-items: center; justify-content: center
+    }
     .hero-img-3 {
         position: absolute;
         left: 0;
